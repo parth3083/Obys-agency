@@ -1,0 +1,115 @@
+@font-face {
+    font-family: a;
+    src: url("/Assets/Fonts/plain-light-webfont.ttf");
+}
+@font-face {
+    font-family: b;
+    src: url("/Assets/Fonts/plain-regular-webfont.ttf");
+}
+@font-face {
+    font-family: c;
+    src: url("/Assets/Fonts/silkserif-lightitalic-webfont.ttf");
+}
+@font-face {
+    font-family: d;
+    src: url("/Assets/Fonts/silkserif-regularitalic-webfont.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+#main{
+    width: 100%;
+    position: relative; 
+    background-color: #000;
+}
+/* LOADER PART  */
+#loader{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0%;
+    z-index: 999;
+    background-color: #0b0b0b;
+    padding-top: 12vw;
+    padding-left: 10vw;
+}
+#page1{
+    width: 100%;
+    height: 100vh;
+    background-color: #151515;
+}
+.line{
+    overflow: hidden;
+
+}
+.line h1{
+    font-size: 6vw;
+    text-transform: uppercase;
+    font-family: a;
+    letter-spacing: 0.2vw;
+}
+.line-part1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1vw;
+}
+.line-part1 .a{
+    width: 6vw;
+}
+.line-part1 h5{
+    font-family: c;
+    font-weight: 100;
+    font-size: 4vw;
+}
+.line1{
+    display:flex ;
+    align-items: center;
+    gap: 2.5vw;
+}
+.line1 h2{
+    animation-name: animation_for_NOW;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    font-family: a;
+    font-size: 4.65vw;
+    text-transform: uppercase;
+}
+@keyframes animation_for_NOW {
+    0%{
+        font-family: a;
+        font-weight: 500;
+        opacity: 1;
+        -webkit-text-stroke: 1px #fff;
+        color: white;
+    }
+    48%{
+        font-family: a;
+        font-weight: 500;
+        opacity: 1;
+        -webkit-text-stroke: 1px #fff;
+        color: white;
+    }
+    50%{
+        font-family: c;
+        font-weight: 500;
+        opacity: 1;
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+    }
+    100%{
+        font-family: c;
+        font-weight: 500;
+        opacity: 1;
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+    }
+    
+}
