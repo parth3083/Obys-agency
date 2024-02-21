@@ -33,6 +33,28 @@ tl.from("#page1", {
 },"a");
 tl.to("#loader", {
     display: "none"
-},"a");
+}, "a");
+    tl.from("#hero1 h1 ,#hero2 h1, #hero3 h1,#hero4 h1", {
+        y: 150,
+        stagger: 0.1,
+        duration: 0.2,
+        delay:0.2
+        
+},"a")
 }
+function cursurAnimation() {
+    document.addEventListener("mousemove", function (dets) {
+        gsap.to("#crsr", {
+            top: dets.y,
+            left:dets.x
+        })
+    })  
+}
+function magnetEffect() {
+    Shery.makeMagnet("#right h4");
+Shery.makeMagnet("nav #left i");
+}
+
+cursurAnimation();
 loaderAnimation();
+magnetEffect();
