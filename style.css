@@ -28,6 +28,7 @@ html , body{
     width: 100%;
     position: relative; 
     background-color: #000;
+    overflow: hidden;
 }
 /* LOADER PART  */
 #loader{
@@ -198,4 +199,45 @@ nav{
     color: transparent;
     font-weight: 100;
     border: none;
+}
+/* PAGE - 2  */
+#page2{
+    width: 100%;
+    height: 100vh;
+    background-color: #151515;
+    padding-top: 6vw;
+}
+#video-container{
+    position: relative;
+    width: 63%;
+    height: 77vh;
+    margin-left: 37%;
+}
+#video-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+#video-container video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#video-crsr{
+    background-color: #FFA63D;
+    width: 8.5vw;
+    height: 8.5vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 0%;
+    left: 80%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+}
+#video-crsr i{
+    font-size: 3vw;
 }
