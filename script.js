@@ -56,9 +56,9 @@ Shery.makeMagnet("nav #left i");
 }
 function page2Effect() { 
     var p2_limit = document.querySelector("#video-container");
-var image = document.querySelector("#image");
-var vid = document.querySelector("#vid");
-var crsr=document.querySelector("#video-crsr");
+    var image = document.querySelector("#image");
+    var vid = document.querySelector("#vid");
+    var crsr=document.querySelector("#video-crsr");
 p2_limit.addEventListener("mousemove", function (dets) {
     var y = dets.y;
     var x = dets.x;
@@ -71,6 +71,7 @@ p2_limit.addEventListener("mousemove", function (dets) {
 });
 crsr.addEventListener("click", function () {
     image.style.opacity = 0;
+    console.log("Parth")
 });
 crsr.addEventListener("click", function () {
     crsr.style.opacity = 0;
@@ -78,6 +79,8 @@ crsr.addEventListener("click", function () {
 p2_limit.addEventListener("mouseleave", function () {
     image.style.opacity = 1;
     crsr.style.opacity = 1;
+    crsr.style.top = "0%";
+    crsr.style.left = "80%";
 });
 }
 
