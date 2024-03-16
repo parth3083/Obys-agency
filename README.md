@@ -3,4 +3,4 @@
  <br>
 The website live at :
  <br>
-https://obys-agnecy-parth.netlify.app/
+ https://obys-agnecy-clone.netlify.app/
